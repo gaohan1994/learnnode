@@ -8,7 +8,7 @@ const app = new Koa();
 app.use(async (ctx, next) => {
     console.log(`${ctx.request.method} ${ctx.request.url}`);
     await next();
-})
+});
 
 app.use(bodyParser());
 
